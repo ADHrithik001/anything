@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Programming Demo</title>
+    <style>
+        /* Internal CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background: #e8491d;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .main-content {
+            padding: 20px;
+            background: #ffffff;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #35424a;
+        }
+
+        .code-example {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        pre {
+            margin: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #35424a;
+            color: #ffffff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Static Programming Demo</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#code">Code Example</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container main-content">
+        <section id="about">
+            <h2>About This Demo</h2>
+            <p>This is a simple, static HTML webpage created to demonstrate a basic website structure using internal CSS. The content is fixed and does not change based on user interaction or dynamic data from a server. It's a fundamental example of frontend development.</p>
+            <p>The styling for this page is completely contained within the <code>&lt;style&gt;</code> tag in the <code>&lt;head&gt;</code> section of the HTML document. This approach is called "internal CSS". It is useful for single-page applications or small demonstrations like this one.</p>
+        </section>
+
+        <section id="code">
+            <h2>Example Code Snippet (Python)</h2>
+            <p>Here is a static code snippet to illustrate a simple "Hello, World!" program. This content is hardcoded into the HTML.</p>
+            <div class="code-example">
+                <pre><code>
+# This is a simple Python program
+# that prints "Hello, World!" to the console.
+
+def greet(name):
+    """
+    This function takes a name and returns a greeting string.
+    """
+    return f"Hello, {name}!"
+
+if __name__ == "__main__":
+    message = greet("World")
+    print(message)  # Output: Hello, World!
+                </code></pre>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>This is a static contact section. There is no backend to process any form data. It's just for display purposes.</p>
+            <p>You can reach us at <a href="mailto:contact@example.com">contact@example.com</a>.</p>
+            <address>
+                123 Demo Street<br>
+                Static City, SC 12345<br>
+                United States
+            </address>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Static Programming Demo. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
